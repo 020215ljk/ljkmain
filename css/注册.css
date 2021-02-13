@@ -1,0 +1,109 @@
+
+
+
+/* 元素选择器 */
+    p{
+      color: grey;
+      font-size: x-small;
+    }
+    a{
+      color: rgb(0, 204, 255);
+      font-size: smaller;
+    }
+    input{
+      height: 20pt;
+    }
+/* id选择器， id用“ # ” */
+    #miaofeohuoqujiaoyanma{
+      background-color: darkturquoise;
+      color: white;
+      font-size: 11pt;
+    }
+/* 类别选择器 ，class用“ . ”英文的句号*/
+/* id选择器只能被引用一次，而类别选择器可多次被引用 */
+    .mashangzhuce{
+      background-color: greenyellow;
+      color:white;
+      width: 240px;
+      height: 50px;
+      font-size: larger;
+    }
+    .shengfen{
+      color: red;
+    }
+    .shenghu{
+      color:yellow;
+    }
+/* 属性选择器 */
+    [name]{
+      color: pink;
+    }
+    [name="shengfen"]{
+      color: blue;
+    }
+/* 伪类选择器， hover要置于link和visited之后才有效，active要置于hover之后才有效 */
+/* 未被访问时的样式           text-decoration设置下划线情况,none为无下划线，
+    underline下划线，overline上划线，line-through中间穿过的删除线 */      
+    a:link{
+      color: deeppink;
+      text-decoration: none;
+    }
+/* 已被访问的样式 */
+    a:visited{
+      color: gold;
+    }
+/* 当鼠标悬浮时在连接上部时的样式 */
+    a:hover{
+      color: rgb(0, 255, 157);
+    }
+/* font-size加放大的值，即可使文字放大或缩小 */
+/* a:hover{font-size: 200%;} */
+/*已经激活的样式  */
+    a:active{
+      color: purple;
+    }
+/* 表单控件，获取焦点时的样式 */
+    input:focus.shurukuang{/* background-color: brown; */
+/* 边框样式 */
+/* border: 2px yellow solid; */
+/* 替换默认样式 */
+    outline: solid 2px tomato;
+  }
+/* 多种选择器的组合使用,label为下文标签加class的值 */
+/* label.bitian{color: rgb(236, 26, 26);} */
+/* 前面l～n为所要更改的元素的指定的标签，后跟两个冒号“ :: ”， 加before或after表示把要添加
+    的值放在前或后，用content包含所要添加的元素 */
+    label.bitian::before{
+      content: "*";
+      color: red;
+    }
+/* 选择器分组，指定标签加指定元素，“ . ”为class，多个标签组合使用时用逗号“ ， ”隔开 */
+/* 单独使用 */
+/* option.shenghu{background-color: sandybrown;}
+    option.shengfen{background-color: sandybrown;} */
+/* 组合使用 */
+    option.shenghu,option.shengfen{
+      background-color: sandybrown;
+    }
+    span.shugang{
+      margin: 0 20px 0;
+    }
+/* 标题nav居中 */
+    nav{
+      text-align: center;
+    }
+    .aihao,.juzhudi{
+      margin-bottom: 20px;
+    }
+    #formmain{
+      width: 400px;
+      height: 670px;
+      /* border: 2px red solid; */
+      margin: 0 auto;
+    }
+    #foot{
+      width: 600px;
+      height: 150px;
+      /* border: 2px red solid; */
+      margin: 30px auto;
+    }

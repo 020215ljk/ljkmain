@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>欢迎来到我的XXX电商首页</title>
+    <style>
+      @import './css/注册.css';
+    </style>
+    <script src="./js/注册.js"></script>
+</head>
+<body>
+    <!-- 标题  nav导航栏标签-->
+    <nav>
+        <a href="./index.html" target="">主页</a>
+        <span class="shugang">|</span>
+        <a href="#" target="">我的订单</a>
+        <span class="shugang">|</span>
+        <a href="#" target="">收藏</a>
+        <span class="shugang">|</span>
+        <a href="#" target="">帮助中心</a>
+    </nav>
+    <!-- 分隔线 -->
+    <div>
+        <hr/>
+    </div>
+    <!-- 正文 form表单标签-->
+<form action="" id="formmain">
+    <!-- 登录 -->
+    <div>
+            欢迎注册360账号<br/>
+            <input type="button" value="X"><br/>
+            已有账号，<a href="./logon.html">立即登录</a><br/>
+    </div>
+    <!-- 手机号 -->
+    <div>
+    <!-- for对应input中的id，使得可直接点击汉字“手机号”选中输入框 -->
+        <label for="shoujihao" class="bitian">手机号：</label>
+    <!-- size为输入框长度，maxlenght为输入字符最大值，placeholder为输入框文字，type用来设置属性，其中的输入表单元素类型text为普通文本 -->
+    <!-- input生成文本框、密码框的标签 -->
+            <input class="shurukuang" type="text" size="20" maxlength="20" placeholder="请输入手机号" id="shoujihao"/><span id="warn"></span><br/>
+                <p>请输入您的手机号</p>
+    </div>
+    <!-- 验证码 -->
+    <div>
+        <label for="yanzhengma" class="bitian">验证码：</label>
+            <input class="shurukuang" type="text" size="20" maxlength="20" placeholder="请输入验证码" id="yanzhengma"/>
+                <img src="./img/验证码.jpg" alt="" height="30">
+                <a href="#">换一张</a><br/>
+                <p>请输入图中的字母或数字，不区分大小写</p>
+                <span id="warn2"></span>
+    </div>
+    <!-- 校验码 -->
+    <div>
+        <label for="jiaoyanma" class="bitian">校验码：</label>
+            <input class="shurukuang" type="text" size="20" maxlength="20" placeholder="请输入校验码" id="jiaoyanma"/>
+            <input id="miaofeohuoqujiaoyanma" type="button" value="免费获取校验码证码"><br/>
+                <p><span>请输入短信中6位数字校验码</span><a href="#">校验码场景问题</a></p>
+    </div>
+    <!-- 用户名 -->
+    <div>
+        <label for="yonghuming" class="bitian">用户名：</label>
+            <input class="shurukuang" type="text" size="20" maxlength="20" placeholder="请输入用户名" id="yonghuming"/><br/>
+                <P>2-14个字符：英文、数字或中文</P>
+    </div>
+    <!-- 密码 -->
+    <div>
+        <label for="mima" class="bitian">密&emsp;码：</label>
+    <!-- type中的输入表单元素类型password为密码框，可直接使输入字符为黑色圆点 -->
+            <input class="shurukuang" type="password" size="20" maxlength="20" placeholder="请输入密码" id="密码"/><br/>
+                <P>6-20个字符（区分大小写）</P>
+    </div>
+    <!-- 爱好 -->
+    <div class="aihao">        
+        <span>爱好：</span>
+        <input type="checkbox" name="aihao"/>游泳
+        <input type="checkbox" name="aihao"/>健身
+        <input type="checkbox" name="aihao"/>其他<br/>
+    </div>
+    <!-- 居住地 -->
+        <div class="juzhudi">
+            <span>居住地：</span>
+    <!-- 下拉列表框，用select和option， size用来表示列表框默认显示的数量 -->
+        <select name="shengfen" id="" size="1">
+    <!-- 用selected="selected" 可以使用该属性的元素设为默认选项-->
+            <option value="hn" class="shengfen">河南</option>
+            <option value="hb">湖北</option>
+            <option value="fn">湖南</option>
+            <option value="hj">福建</option>
+        </select>
+            <span>省</span>
+            <select name="shenghui" id="" size="1">
+                <option value="zz" class="shenghu">郑州</option>
+                <option value="wh">武汉</option>
+                <option value="cs">长沙</option>
+                <option value="hz">福州</option>
+            </select>
+            <span>市</span>
+    </div>
+    <!-- 注册 -->
+    <div>
+    <!-- submit为提交按钮，提交按钮的作用是将数据传输给后端，即form标签中的路径
+        value用来设置按钮中的内容是什么 -->
+    <!-- reset为重置按钮 -->
+            <input class="mashangzhuce" type="submit" value="马上注册"><br/>
+    <!-- type中的输入表单元素类型checkbook为多选框，指定按钮是否被选中 -->
+            <P><input type="checkbox" ><span>我已经阅读并同意</span><a href="#">《360用户服务条款》</a></P>
+    </div>
+</form>
+    <!-- 页脚 -->
+    <div id="foot">
+        <footer>
+            <img src="./img/1.png "/><strong>100%正品保障</strong>
+            <img src="./img/2.png"/><strong>退货无忧</strong>
+            <img src="./img/3.png "/><strong>低价保障</strong>
+            <img src="./img/4.png "/><strong>海外发货</strong>
+        </footer>
+            <!-- <hr/> -->
+            关于我们 | 服务条款 | 隐私保护 | 联系我们 | 帮助中心
+            <br/>
+            版权所有&copy;软件1班4组刘静坤
+        
+    </div>
+</body>
+</html>

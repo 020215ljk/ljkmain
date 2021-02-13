@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+#navigation-category-content{
+    display: block;
+}
+
+#main{
+    padding: 0px 0px 40px 0px;    
+}
+
+/* section */
+
+.section-heading{
+    line-height: 60px;
+}
+
+.section-heading h2{
+    font-size: 24px;
+}
+
+.section-heading ul li{
+    float: left;
+    font-size: 16px;
+}
+
+.section{
+    background: #FFFFFF;
+    margin: 0px 0px 20px 0px;
+}
+
+.section .left,
+.section #scroll,
+.section .right{
+    float: left;
+}
+
+.section .left,
+.section .right{
+    width: 235px;
+}
+
+.section #scroll{
+    width: 530px;
+}
+
+.section .center-grid{
+    border-bottom: 1px dotted #DDDDDD;
+    border-right: 1px dotted #DDDDDD;
+    height: 244px;
+    width: 264px;
+}
+
+.section .center-row:last-child .center-grid{
+    border-bottom: none;
+    height: 245px;
+}
+
+.section .center-grid dl{
+    height: 100%;
+    text-align: center;
+}
+
+.section .center-grid dl dt{
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.section .center-grid dl dd{
+    color: #666666;
+}
+
+/* first-floor */
+
+.first-floor .left{
+    height: 450px;
+}
+
+.first-floor .user{
+    border-bottom: 1px dotted #CCCCCC;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.first-floor .user .welcome{
+    line-height: 40px;
+}
+
+.first-floor .user a{
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+    padding: 5px 20px;
+}
+
+.first-floor .user a.login{
+    background: #E00000;
+}
+
+.first-floor .user a.register{
+    background: #009900;
+}
+
+.first-floor .notice{
+    font-size: 12px;
+    padding: 20px;
+}
+
+.first-floor .notice h3 a{
+    border-bottom: 2px solid #E00000;
+}
+
+.first-floor .notice ul{
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.first-floor .notice ul li{
+    zoom: 1;
+}
+
+.first-floor .notice ul li:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.first-floor .notice ul li em{
+    color: #E00000;
+    float: left;
+    font-style: normal;
+    font-size: 25px;
+    width: 15px;
+}
+.first-floor .notice ul li a{
+    float: left;
+    width: 130px;
+}
+
+.first-floor .notice ul li span{
+    color: #999999;
+    float: right;
+    text-align: right;
+    width: 50px;
+}
+
+/* second floor */
+
+.second-floor{
+    background: #EEEEEE;
+}
+/* .celan{
+    float: left;
+} */
+table{
+    border-spacing: 22px;
+}
+/* 设置滚动区域 */
+#scroll{
+    width: 530px;
+    height: 450px;
+    border: 0px solid black;
+    margin: 0 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+/* 设置轮播图中的图片样式 */
+#scroll>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* CSS过渡 */
+    transition: left 0.7s ease-in-out;
+}
+/* 设置左右箭头样式 */
+.arrow{
+width: 60px;
+height: 100%;
+font-size: 40px;
+text-align: center;
+line-height: 500px;
+color: #fff;
+cursor: pointer;
+position: absolute;
+}
+/* 设置页码显示样式 */
+.pageControl{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+}
+/* .right{
+    float: right;
+} */

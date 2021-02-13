@@ -1,0 +1,34 @@
+/* 整体外边距 */
+body{
+    margin: 0;
+}
+/* 未点击样式 */
+a:link{
+    text-decoration: none;
+    color: aquamarine;
+}
+/* 已点击样式 */
+a:visited{
+    color: coral;
+}
+/* 悬浮时样式 */
+a:hover{
+    color: cornflowerblue;
+}
+/* 聚焦时样式 */
+a:active{
+    color: brown;
+}
+/* 内联元素转成块级元素 */
+img{
+    display: block;
+}
+/* 页脚 */
+img.yejiao{
+    display: inline;
+}
+.nav{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
